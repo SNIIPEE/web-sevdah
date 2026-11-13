@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Karta sevdaha | Sevdah</title>
+
+  <link href="images/sevdah.svg" rel="icon">
+  <link href="style.css" rel="stylesheet">
+  <script defer src="karta.js">
+  </script>
+</head>
+
+<body>
+
+  <header class="tamno">
+    <nav class="okvir navigacija">
+      <a class="logo" href="index.html"><img src="images/sevdah.svg" width="32" height="32">Sevdah</a>
+
+      <div class="meni">
+        <a href="index.html">Početna</a>
+        <a class="aktivno" href="karta.html">Karta</a>
+        <a href="historija.html">Historija</a>
+        <a href="sevdalinke.html">Sevdalinke</a>
+        <a href="izvodjaci.html">Izvođači</a>
+        <a href="harmonika.html">Harmonika</a>
+      </div>
+    </nav>
+  </header>
+
+
+    <main>
+        <div class="tamno" style="padding: 40px 0;">
+            <div class="okvir">
+                <div class="red" style="align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 24px; padding-bottom: 16px; border-bottom: 1px solid #714b53;">
+                    <div>
+                        <p class="oznaka">Muzičko putovanje kroz Bosnu i Hercegovinu</p>
+                        <h1>Karta sevdaha</h1>
+                    </div>
+                    <p>
+                        Klikni na grad.<br>
+                        Pronađi pjesmu koja ga pamti.
+                    </p>
+                </div>
+
+                <div class="red">
+                    <div class="stupac">
+                        <div style="position: relative;">
+                            <img height="520" src="images/bih-nazivi.svg" width="600">
+                            <span style="position: absolute; color: #efc88e; font-size: 12px; top: 0; left: 12px;">BIH / 01—05</span>
+                            <button class="pin" id="banja-luka" onclick="prikaziMjesto('banja-luka')" style="left: 40.91%; top: 23.41%;" title="Banja Luka" type="button">
+                                <span></span>
+                            </button>
+                            <button class="pin" id="jajce" onclick="prikaziMjesto('jajce')" style="left: 42.44%; top: 36.89%;" title="Jajce · Pliva" type="button">
+                                <span></span>
+                            </button>
+                            <button class="pin" id="sarajevo" onclick="prikaziMjesto('sarajevo')" style="left: 64.62%; top: 51.94%;" title="Sarajevo" type="button">
+                                <span></span>
+                            </button>
+                            <button class="pin" id="visegrad" onclick="prikaziMjesto('visegrad')" style="left: 81.7%; top: 54.24%;" title="Višegrad" type="button">
+                                <span></span>
+                            </button>
+                            <button class="pin odabrano" id="mostar" onclick="prikaziMjesto('mostar')" style="left: 52.85%; top: 67.91%;" title="Mostar" type="button">
+                                <span></span>
+                            </button>
+                        </div>
+                        <p style="padding-top: 16px; border-top: 1px solid #714b53; font-size: 13px;" id="odabrano-mjesto">Mostar: Emina</p>
+                    </div>
+
+                    <div class="stupac" style="border: 1px solid #714b53; background-color: #482631;" id="prica">
+                        <div>
+                            <img style="height: 220px; object-fit: cover;" height="643" id="grad-slika" src="images/mostar.jpg" width="960">
+                            <p class="opis-slike" style="margin: 8px 20px; color: #e7ccc0;" id="grad-kadar">Mostar · Neretva i Stari most</p>
+                        </div>
+
+
+                        <div style="padding: 20px;">
+                            <p class="oznaka" id="grad-broj">05 / HERCEGOVINA</p>
+                            <h2 id="grad">Mostar</h2>
+                            <p id="grad-opis">„Emina“ vodi u mostarsku avliju. U stihovima Alekse Šantića jedan pogled, ruže i miris jasmina postaju cijela priča o čežnji.</p>
+                            <h3 id="grad-pjesma">Emina</h3>
+                            <p id="grad-izvodjac">Himzo Polovina</p>
+                            <div class="linkovi">
+                                <a class="dugme" href="https://www.youtube.com/watch?v=hkhnzxnYfNI" id="grad-slusaj" rel="noopener noreferrer" target="_blank">▶ Poslušaj ↗</a>
+                                <a href="sevdalinke.html">Zbirka pjesama →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="odjeljak" style="padding: 100px 100px">
+            <div class="red">
+                <div class="stupac">
+                    <hr>
+                    <h3>Travnik</h3>
+                    <p class="naziv-pjesme">Što se ono Travnik zamaglio</p>
+                    <p>Pjesma počinje pitanjem o gradu pod maglom. Odgovor vodi prema djevojci čiji pogled, slikovito, zapali čitav Travnik.</p>
+                    <a href="https://bs.wikisource.org/wiki/Što_se_ono_Travnik_zamaglio" rel="noopener noreferrer" target="_blank">Pročitaj pjesmu ↗</a>
+                </div>
+
+
+                <div class="stupac">
+                    <hr>
+                    <h3>Trebinje</h3>
+                    <p class="naziv-pjesme">U Trebinju gradu</p>
+                    <p>Pjesma govori o smrti mlade Zlate i njenim posljednjim riječima majci. Grad iz prvog stiha postaje mjesto zajedničke tuge.</p>
+                    <a href="https://www.cidom.org/wp-content/uploads/2015/12/Sevdalinke-tekstovi_opt.pdf#page=142" rel="noopener noreferrer" target="_blank">Pročitaj pjesmu · PDF ↗</a>
+                </div>
+
+                <div class="stupac">
+                    <hr>
+                    <h3>Tuzla</h3>
+                    <p class="naziv-pjesme">Ječam žele Tuzlanke djevojke</p>
+                    <p>Dok žanju ječam, djevojke razmišljaju o udaji i svatovima. Kratak razgovor sa žitom otkriva njihove želje i iščekivanje.</p>
+                    <a href="https://sevdah.tv/jecam-zele-tuzlanke-djevojke/" rel="noopener noreferrer" target="_blank">Pročitaj pjesmu ↗</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <footer class="tamno podnozje">
+    <div class="okvir red">
+      <div class="stupac">
+        <a class="logo" href="index.html">Sevdah</a>
+        <p>Pjesme, ljudi i priče iz muzičke tradicije Bosne i Hercegovine.</p>
+      </div>
+
+      <div class="stupac footer-linkovi">
+        <h2>Istraži</h2>
+        <a href="index.html">Početna</a>
+        <a href="karta.html">Karta sevdaha</a>
+        <a href="historija.html">Historija</a>
+      </div>
+
+      <div class="stupac footer-linkovi">
+        <h2>Upoznaj sevdah</h2>
+        <a href="sevdalinke.html">Sevdalinke</a>
+        <a href="izvodjaci.html">Izvođači</a>
+        <a href="harmonika.html">Harmonika</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

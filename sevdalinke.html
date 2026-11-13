@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sevdalinke | Sevdah</title>
+
+  <link href="images/sevdah.svg" rel="icon">
+  <link href="style.css" rel="stylesheet">
+  <script defer src="tekst.js">
+  </script>
+  <script defer src="meni.js"></script>
+</head>
+
+<body>
+
+  <header class="tamno">
+    <nav class="okvir navigacija">
+      <a class="logo" href="index.html"><img src="images/sevdah.svg" width="32" height="32">Sevdah</a>
+
+      <button class="meni-dugme" type="button" aria-controls="glavni-meni" aria-expanded="false" aria-label="Otvori meni" hidden>
+        <span class="meni-ikona" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>Meni</span>
+      </button>
+
+      <div class="meni" id="glavni-meni">
+        <a href="index.html">Početna</a>
+        <a href="karta.html">Karta</a>
+        <a href="historija.html">Historija</a>
+        <a class="aktivno" href="sevdalinke.html">Sevdalinke</a>
+        <a href="izvodjaci.html">Izvođači</a>
+        <a href="harmonika.html">Harmonika</a>
+      </div>
+    </nav>
+  </header>
+
+
+    <main>
+        <div class="tamno naslov">
+            <div class="okvir">
+                <p class="oznaka">Zbirka pjesama</p>
+                <h1>Sevdalinke</h1>
+                <p>Otvori naslov, pročitaj stihove i odaberi izvedbu. Tekstovi i ponavljanja mogu se razlikovati od jednog snimka do drugog.</p>
+            </div>
+        </div>
+
+        <div class="okvir odjeljak citanje">
+            <div class="pjesma">
+                <button class="naslov-pjesme" onclick="prikaziTekst('pjesma-1')" type="button">Bosno moja</button>
+                <div class="pjesma-sadrzaj" id="pjesma-1">
+                    <div class="red">
+                        <div class="stihovi stupac">
+                            <p class="autor-pjesme">Jovica Petković · odabrane strofe</p>
+
+                            <p>
+                                Bosno moja, divna, mila,<br>
+                                l’jepa, gizdava,<br>
+                                u tebi je Sarajevo,<br>
+                                šeher sevdaha.
+                            </p>
+                            <p>
+                                U tebi su gore mnoge,<br>
+                                gore visoke,<br>
+                                i studene izvor-vode,<br>
+                                Bosne ponosne.
+                            </p>
+
+                            <p>
+                                Bosno moja, divna, mila,<br>
+                                l’jepa, gizdava,<br>
+                                u tebi je Banja Luka,<br>
+                                uzdah momaka.
+                            </p>
+                        </div>
+
+                        <div class="izvedbe stupac">
+                            <h2>Poslušaj izvedbu</h2>
+                            <p>Pjesma niže slike Bosne, od Sarajeva i Banje Luke do gora i izvora. Na snimku se čuje duboki glas po kojem je Nada ostala upamćena.</p>
+                            <a href="https://www.youtube.com/watch?v=63dRKNMmeUw" rel="noopener noreferrer" target="_blank">Nada Mamula ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pjesma">
+                <button class="naslov-pjesme" onclick="prikaziTekst('pjesma-2')" type="button">Emina</button>
+                <div class="pjesma-sadrzaj" hidden id="pjesma-2">
+                    <div class="red">
+                        <div class="stihovi stupac">
+                            <p class="autor-pjesme">Aleksa Šantić · izvorni pjesnički tekst</p>
+                            <p>
+                                Sinoć, kad se vratih iz topla hamama,<br>
+                                Prođoh pokraj bašte staroga imama;<br>
+                                Kad tamo, u bašti, u hladu jasmina,<br>
+                                S ibrikom u ruci stajaše Emina.
+                            </p>
+
+                            <p>
+                                Ja kakva je, pusta! Tako mi imana,<br>
+                                Stid je ne bi bilo da je kod sultana!<br>
+                                Pa još kad se šeće i plećima kreće...<br>
+                                — Ni hodžin mi zapis više pomoć neće!...
+                            </p>
+                            <p>
+                                Ja joj nazvah selam. Al’ moga mi dina,<br>
+                                Ne šće ni da čuje lijepa Emina,<br>
+                                No u srebren ibrik zahitila vode<br>
+                                Pa po bašti đule zalivati ode;
+                            </p>
+
+                            <p>
+                                S grana vjetar duhnu pa niz pleći puste<br>
+                                Rasplete joj one pletenice guste,<br>
+                                Zamirisa kosa ko zumbuli plavi,<br>
+                                A meni se krenu bururet u glavi!
+                            </p>
+                            <p>
+                                Malo ne posrnuh, mojega mi dina,<br>
+                                No meni ne dođe lijepa Emina.<br>
+                                Samo me je jednom pogledala mrko,<br>
+                                Niti haje, alčak, što za njome crko’!...
+                            </p>
+                            <a class="izvor-red" href="https://bs.wikisource.org/wiki/Emina_(Šantić)" rel="noopener noreferrer" target="_blank">Izvor teksta ↗</a>
+                        </div>
+
+
+                        <div class="izvedbe stupac">
+                            <h2>Poslušaj izvedbu</h2>
+                            <p>U stihovima Alekse Šantića pripovjedač ugleda Eminu u mostarskoj avliji. Srebrni ibrik kojim zalijeva ruže i miris jasmina oživljavaju taj trenutak.</p>
+                            <a href="https://www.youtube.com/watch?v=hkhnzxnYfNI" rel="noopener noreferrer" target="_blank">Himzo Polovina ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pjesma">
+                <button class="naslov-pjesme" onclick="prikaziTekst('pjesma-3')" type="button">Kad ja pođoh na Bentbašu</button>
+                <div class="pjesma-sadrzaj" hidden id="pjesma-3">
+                    <div class="red">
+                        <div class="stihovi stupac">
+                            <p class="autor-pjesme">Narodna pjesma · jedna verzija teksta</p>
+
+                            <p>
+                                Kad ja pođoh na Bembašu,<br>
+                                na Bembašu, na vodu,<br>
+                                ja povedoh b’jelo jagnje,<br>
+                                b’jelo jagnje sa sobom.
+                            </p>
+                            <p>
+                                Sve djevojke Bembašanke<br>
+                                na kapiji stajahu,<br>
+                                samo moja mila draga,<br>
+                                na demirli pendžeru.
+                            </p>
+
+                            <p>
+                                Ja joj nazvah dobro veče:<br>
+                                „Dobro veče, djevojče!“<br>
+                                Ona meni: „Dođ’ do veče,<br>
+                                dođ’ do veče, dilberče!“
+                            </p>
+                            <p>
+                                Ja ne odoh isto veče,<br>
+                                već ja odoh sutradan.<br>
+                                Ono moja, mila draga<br>
+                                za drugog se udala.
+                            </p>
+                            <a class="izvor-red" href="https://bs.wikisource.org/wiki/Kad_ja_pođoh_na_Bembašu" rel="noopener noreferrer" target="_blank">Izvor teksta ↗</a>
+                        </div>
+
+
+                        <div class="izvedbe stupac">
+                            <h2>Poslušaj izvedbu</h2>
+                            <p>Na sarajevskoj Bentbaši djevojka pozove dragog da joj dođe navečer. On dođe tek sljedećeg dana i sazna da se udala za drugog.</p>
+                            <a href="https://www.youtube.com/watch?v=_Il75WcNNtc" rel="noopener noreferrer" target="_blank">Amira Medunjanin ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pjesma">
+                <button class="naslov-pjesme" onclick="prikaziTekst('pjesma-4')" type="button">Kraj tanana šadrvana</button>
+                <div class="pjesma-sadrzaj" hidden id="pjesma-4">
+                    <div class="red">
+                        <div class="stihovi stupac">
+                            <p class="autor-pjesme">Prema pjesmi „Der Asra“ Heinricha Heinea</p>
+
+                            <p>
+                                Kraj tanahna šadrvana<br>
+                                gdje žubori voda živa,<br>
+                                svakog dana šetala se<br>
+                                sultanova kćerka mila.
+                            </p>
+                            <p>
+                                Svakog dana jedno ropče<br>
+                                stajalo kraj šadrvana,<br>
+                                kako vr’jeme prolazilo,<br>
+                                ropče blijeđe, blijeđe bilo.
+                            </p>
+
+                            <p>
+                                Jednog dana pitala ga<br>
+                                sultanova kćerka draga:<br>
+                                „Kazuj, robe, odakle si,<br>
+                                iz plemena kojega si?“
+                            </p>
+                            <p>
+                                „Ja se zovem El Muhammed,<br>
+                                iz plemena starih Azra,<br>
+                                što za ljubav život gube<br>
+                                i umiru kada ljube!“
+                            </p>
+                            <a class="izvor-red" href="https://bs.wikisource.org/wiki/Kraj_tanahna_šadrvana" rel="noopener noreferrer" target="_blank">Izvor teksta ↗</a>
+                        </div>
+
+
+                        <div class="izvedbe stupac">
+                            <h2>Poslušaj izvedbu</h2>
+                            <p>Šadrvan je ukrasna česma oko koje se odvija priča iz pjesme Der Asra njemačkog pjesnika Heinricha Heinea. Ovdje je možeš čuti u koncertnoj izvedbi trija.</p>
+                            <a href="https://www.youtube.com/watch?v=zAjZilGGmWY" rel="noopener noreferrer" target="_blank">Damir Imamović Trio ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pjesma">
+                <button class="naslov-pjesme" onclick="prikaziTekst('pjesma-5')" type="button">Moj dilbere</button>
+                <div class="pjesma-sadrzaj" hidden id="pjesma-5">
+                    <div class="red">
+                        <div class="stihovi stupac">
+                            <p class="autor-pjesme">Narodna pjesma</p>
+
+                            <p>
+                                Moj dilbere kud se šećeš,<br>
+                                haj što i mene ne povedeš?<br>
+                                Haj što i mene ne povedeš?
+                            </p>
+                            <p>
+                                Povedi me u čaršiju,<br>
+                                haj pa me prodaj bazerdžanu.<br>
+                                Haj pa me prodaj bazerdžanu.
+                            </p>
+
+                            <p>
+                                Uzmi za me oku zlata,<br>
+                                haj pa pozlati dvoru vrata.<br>
+                                Haj pa pozlati dvoru vrata.
+                            </p>
+                            <p>
+                                Što te volim, ah, što te ljubim,<br>
+                                aman, aman, Bože moj.
+                            </p>
+
+                            <p>
+                                Što te volim, ah, što te ljubim,<br>
+                                aman, aman, Bože moj!
+                            </p>
+                            <a class="izvor-red" href="https://bs.wikisource.org/wiki/Moj_dilbere" rel="noopener noreferrer" target="_blank">Izvor teksta ↗</a>
+                        </div>
+
+                        <div class="izvedbe stupac">
+                            <h2>Poslušaj izvedbu</h2>
+                            <p>U zbirci koju je muzikologinja Laura Boulton snimala 1951. sačuvana je izvedba pjevačice uz harmoniku. Arhiv je navodi bez imena.</p>
+                            <a href="https://folkways.si.edu/girl-with-accordion-accompaniment/moj-dilbere/world/music/track/smithsonian" rel="noopener noreferrer" target="_blank">Arhivski snimak · Smithsonian Folkways ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pjesma">
+                <button class="naslov-pjesme" onclick="prikaziTekst('pjesma-6')" type="button">Mujo kuje konja po mjesecu</button>
+                <div class="pjesma-sadrzaj" hidden id="pjesma-6">
+                    <div class="red">
+                        <div class="stihovi stupac">
+                            <p class="autor-pjesme">Narodna pjesma</p>
+                            <p>
+                                Mujo kuje konja po mjesecu,<br>
+                                Mujo kuje, a majka ga kune:
+                            </p>
+
+                            <p>
+                                „Sine Mujo, živ ti bio majci,<br>
+                                ne kuju se konji po mjesecu,<br>
+                                već po danu i žarkome suncu!“
+                            </p>
+                            <p>
+                                „Mila majko, ne kuni me mlada,<br>
+                                znaš kad meni na um padne draga.
+                            </p>
+
+                            <p>
+                                Ja ne gledam Sunca nit’ Mjeseca,<br>
+                                nit’ moj đogo mraka nit’ oblaka<br>
+                                već me nosi dragoj pod pendžere!“
+                            </p>
+                            <a class="izvor-red" href="https://bs.wikisource.org/wiki/Mujo_kuje_konja_po_mjesecu" rel="noopener noreferrer" target="_blank">Izvor teksta ↗</a>
+                        </div>
+
+                        <div class="izvedbe stupac">
+                            <h2>Poslušaj izvedbu</h2>
+                            <p>Majka savjetuje Muju da s potkivanjem konja sačeka dan. Mujo žuri svojoj dragoj pa ga mrak ne zaustavlja.</p>
+                            <a href="https://www.youtube.com/watch?v=it6C4ZFegOM" rel="noopener noreferrer" target="_blank">Safet Isović ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pjesma">
+                <button class="naslov-pjesme" onclick="prikaziTekst('pjesma-7')" type="button">Otkako je Banja Luka postala</button>
+                <div class="pjesma-sadrzaj" hidden id="pjesma-7">
+                    <div class="red">
+                        <div class="stihovi stupac">
+                            <p class="autor-pjesme">Narodna pjesma · jedna verzija teksta</p>
+                            <p>
+                                Otkako je Banja Luka postala,<br>
+                                nije lipša udovica ostala.
+                            </p>
+
+                            <p>
+                                K’o što ona Džafer-bega kaduna.<br>
+                                Zaprosi je banjalučki kadija.
+                            </p>
+                            <p>
+                                Ona neće banjalučkog kadiju,<br>
+                                ona hoće sarajevskog bekriju.
+                            </p>
+                            <a class="izvor-red" href="https://www.cidom.org/wp-content/uploads/2015/12/Sevdalinke-tekstovi_opt.pdf#page=85" rel="noopener noreferrer" target="_blank">Izvor teksta · PDF, str. 85 ↗</a>
+                        </div>
+
+
+                        <div class="izvedbe stupac">
+                            <h2>Poslušaj izvedbu</h2>
+                            <p>Naslov odmah vodi u Banju Luku. Ovaj snimak dolazi s albuma Live in Mostar, zabilježenog u Narodnom pozorištu u Mostaru 2016. godine. Poslušaj kako pjesma zvuči pred koncertnom publikom.</p>
+                            <a href="https://www.youtube.com/watch?v=JlsGyJs40FQ" rel="noopener noreferrer" target="_blank">Divanhana ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pjesma">
+                <button class="naslov-pjesme" onclick="prikaziTekst('pjesma-8')" type="button">S one strane Plive</button>
+                <div class="pjesma-sadrzaj" hidden id="pjesma-8">
+                    <div class="red">
+                        <div class="stihovi stupac">
+                            <p class="autor-pjesme">Narodna pjesma</p>
+
+                            <p>
+                                S one strane Plive<br>
+                                gajtan trava raste,<br>
+                                po njoj pasu ovce,<br>
+                                čuvalo ih momče.
+                            </p>
+                            <p>
+                                U tuđemu svijetu<br>
+                                nigdje nikog svoga,<br>
+                                bez brata i seje,<br>
+                                bez jaran djevojke.
+                            </p>
+
+                            <p>
+                                Momče tužno plače,<br>
+                                još tužnije ječi,<br>
+                                svaka tuđa zemlja<br>
+                                tuga je golema.
+                            </p>
+                            <a class="izvor-red" href="https://www.hitovi.ba/id-25009-Zehra_Deovic_S_one_strane_Plive_pjesma.aspx" rel="noopener noreferrer" target="_blank">Izvor teksta ↗</a>
+                        </div>
+
+                        <div class="izvedbe stupac">
+                            <h2>Poslušaj izvedbu</h2>
+                            <p>Pjesma počinje slikom obale Plive, pa prelazi na čežnju za porodicom iz tuđine. Divanhana ju je snimila sa sarajevskim horom Pontanima za dokumentarac Zukva.</p>
+                            <a href="https://www.youtube.com/watch?v=R2O4LHq4m-Y" rel="noopener noreferrer" target="_blank">Divanhana i hor Pontanima ↗</a>
+                            <a href="https://open.spotify.com/track/36YQpPcPuL1BJQ07Mg9VGy" rel="noopener noreferrer" target="_blank">Beba Selimović ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pjesma">
+                <button class="naslov-pjesme" onclick="prikaziTekst('pjesma-9')" type="button">Snijeg pade na behar</button>
+                <div class="pjesma-sadrzaj" hidden id="pjesma-9">
+                    <div class="red">
+                        <div class="stihovi stupac">
+                            <p class="autor-pjesme">Narodna pjesma · bez ponavljanja stihova</p>
+                            <p>
+                                Snijeg pade na behar, na voće,<br>
+                                neka ljubi ko god koga hoće.
+                            </p>
+
+                            <p>
+                                Ako neće, nek’ se ne nameće,<br>
+                                od nameta nema selameta.
+                            </p>
+                            <p>
+                                Da sam sretan, k’o što sam nesretan,<br>
+                                pa da dođem tebi u odaje.
+                            </p>
+
+                            <p>
+                                Da ti sjedim među šiltetima,<br>
+                                baš k’o paša među bimbašama!
+                            </p>
+                            <a class="izvor-red" href="https://www.youtube.com/watch?v=TQsjam0dQf0" rel="noopener noreferrer" target="_blank">Izvor teksta ↗</a>
+                        </div>
+
+                        <div class="izvedbe stupac">
+                            <h2>Poslušaj izvedbu</h2>
+                            <p>Behar je cvat voćke. Slika snijega na proljetnim cvjetovima uvodi pjesmu o ljubavi.</p>
+                            <a href="https://www.youtube.com/watch?v=fgaPzKX-blE" rel="noopener noreferrer" target="_blank">Safet Isović ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pjesma">
+                <button class="naslov-pjesme" onclick="prikaziTekst('pjesma-10')" type="button">U lijepom starom gradu Višegradu</button>
+                <div class="pjesma-sadrzaj" hidden id="pjesma-10">
+                    <div class="red">
+                        <div class="stihovi stupac">
+                            <p class="autor-pjesme">Dragiša Nedović</p>
+                            <h2>O pjesmi</h2>
+                            <p style="text-align: left; font-family: Arial, sans-serif; font-size: 16px;">Sjećanje na ljubav, rastanak i povratak povezano je s Višegradom i Drinom. Autor pjesme je Dragiša Nedović. Puni tekst dostupan je na povezanom izvoru.</p>
+                            <a class="izvor-red" href="https://bs.wikisource.org/wiki/U_lijepom_starom_gradu_Višegradu" rel="noopener noreferrer" target="_blank">Pročitaj puni tekst ↗</a>
+                        </div>
+
+                        <div class="izvedbe stupac">
+                            <h2>Poslušaj izvedbu</h2>
+                            <p>Grad na Drini dobio je mjesto u pjesmi Dragiše Nedovića. Uz tradicionalne pjesme nepoznatih autora, izvođači sevdaha pjevaju i djela kojima znamo autora. Ovdje slušamo Himzinu izvedbu.</p>
+                            <a href="https://www.youtube.com/watch?v=pHpS2Dll9lk" rel="noopener noreferrer" target="_blank">Himzo Polovina ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pjesma">
+                <button class="naslov-pjesme" onclick="prikaziTekst('pjesma-11')" type="button">Voljelo se dvoje mladih</button>
+                <div class="pjesma-sadrzaj" hidden id="pjesma-11">
+                    <div class="red">
+                        <div class="stihovi stupac">
+                            <p class="autor-pjesme">Narodna pjesma · poznata i kao „Žute dunje“</p>
+                            <p>
+                                Voljelo se dvoje mladih<br>
+                                šest mjeseci i godinu.<br>
+                                I htjedoše da se uzmu,<br>
+                                dušmani im ne dadoše.
+                            </p>
+
+                            <p>
+                                Razbolje se l’jepa Fatma,<br>
+                                jedinica u majke,<br>
+                                poželjela žute dunje,<br>
+                                žute dunje iz Stambola.
+                            </p>
+                            <p>
+                                Ode dragi da donese<br>
+                                žute dunje carigradske,<br>
+                                al’ ga nema tri godine,<br>
+                                nit’ se javlja, niti dolazi.
+                            </p>
+
+                            <p>
+                                Dođe dragi sa dunjama,<br>
+                                nađe Fatmu na nosilima:<br>
+                                „Dv’jesta dajem, spustite je,<br>
+                                trista dajem, otkrijte je,<br>
+                                da još jednom Fatmu vidim ja!“
+                            </p>
+                            <a class="izvor-red" href="https://sevdalinka.info/izvorne-sevdalinke-2/" rel="noopener noreferrer" target="_blank">Izvor teksta ↗</a>
+                        </div>
+
+                        <div class="izvedbe stupac">
+                            <h2>Poslušaj izvedbu</h2>
+                            <p>Fatma poželi dunje iz Stambola. Njen dragi ode po njih, a plod koji joj donese postane znak zakašnjelog povratka.</p>
+                            <a href="https://www.youtube.com/watch?v=4clngLhzBdE" rel="noopener noreferrer" target="_blank">Himzo Polovina ↗</a>
+                            <a href="https://www.youtube.com/watch?v=EnyzeVcsrEs" rel="noopener noreferrer" target="_blank">Divanhana i Vlado Kreslin ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+  <footer class="tamno podnozje">
+    <div class="okvir red">
+      <div class="stupac">
+        <a class="logo" href="index.html">Sevdah</a>
+        <p>Pjesme, ljudi i priče iz muzičke tradicije Bosne i Hercegovine.</p>
+      </div>
+
+      <div class="stupac footer-linkovi">
+        <h2>Istraži</h2>
+        <a href="index.html">Početna</a>
+        <a href="karta.html">Karta sevdaha</a>
+        <a href="historija.html">Historija</a>
+      </div>
+
+
+      <div class="stupac footer-linkovi">
+        <h2>Upoznaj sevdah</h2>
+        <a href="sevdalinke.html">Sevdalinke</a>
+        <a href="izvodjaci.html">Izvođači</a>
+        <a href="harmonika.html">Harmonika</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
